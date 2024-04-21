@@ -82,9 +82,3 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
 yang berada di subscriber.
 
 Hal ini berarti ketika publisher dilakukan `cargo run` maka akan melakukan semacam "memanggil fungsi" pada `main.rs` yang juga mengakses message broker yang sama pada username, password, dan port. Secara serentak akan menampilkan hasil seperti pada gambar di kedua terminal di atas.
-
-## Simulation slow subscriber
-
-![image](https://github.com/fathonidf-Adpro/tutorial-8-publisher/assets/105644250/055f1690-7e81-4de3-97cc-f528f62616cc)
-
-Pada message broker saya terdapat 15 message dalam queue, hal ini karena saya menjalani `cargo run` sebanyak 4 kali secara cepat ditambah dengan adanya `thread::sleep(ten_millis);` pada publisher yang menjadi buffer untuk menunggu setiap thread untuk menerima message, dalam hal ini maka program saya maksimal terdapat 15 message yang mengantri dalam queue tersebut.
