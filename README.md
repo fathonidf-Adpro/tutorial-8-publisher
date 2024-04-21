@@ -80,3 +80,5 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
 }
 ```
 yang berada di subscriber.
+
+Hal ini berarti ketika publisher dilakukan `cargo run` maka akan melakukan semacam "memanggil fungsi" pada `main.rs` yang juga mengakses message broker yang sama pada username, password, dan port. Secara serentak akan menampilkan hasil seperti pada gambar di kedua terminal di atas.
