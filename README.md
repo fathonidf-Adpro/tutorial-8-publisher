@@ -19,3 +19,6 @@ Ya, URL `"amqp://guest:guest@localhost:5672"` sama dengan yang digunakan dalam p
 - `amqp://` menunjukkan protokol yang digunakan, yaitu AMQP.
 - `guest:guest` adalah kredensial login default yang digunakan. Dalam konteks ini, guest adalah nama pengguna dan guest adalah kata sandi.
 - `localhost:5672` adalah alamat host dan port yang digunakan untuk terhubung ke server AMQP. Dalam hal ini, koneksi akan dilakukan ke mesin yang sama (`localhost`) di port standar AMQP (`5672`).
+
+## Running RabbitMQ as message broker.
+![image](https://github.com/fathonidf-Adpro/tutorial-1/assets/105644250/d9763999-653d-4b17-a172-bd1e42be2776)
